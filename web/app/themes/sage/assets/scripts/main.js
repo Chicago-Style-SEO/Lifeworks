@@ -75,3 +75,18 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+jQuery(".menu-item").hover(function () {
+   jQuery(this).children('.sub-menu').toggle();
+});
+
+jQuery(".menu-search").click(function(){
+  jQuery(".searchBarContainer").toggle('slow');
+});
+
+function runSearch(e) {
+    if (e.keyCode === 13) {
+        window.location.href = "/search/" + jQuery("#searchNav").val();
+        return false;
+    }
+}

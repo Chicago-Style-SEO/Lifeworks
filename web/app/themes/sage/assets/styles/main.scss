@@ -29,8 +29,8 @@ $accent: #FF7F66;
 $dark: #121212;
 $darkGray: #555485;
 $midGray: #D6D4D1;
-$lightGray: lighten($midGray, 50%);
-$offWhite: lighten($midGray, 20%);
+$lightGray: lighten($midGray, 12%);
+$offWhite: lighten($midGray, 15%);
 $white: #FFFFFF;
 
 $sansSerifFont: 'Lato', sans-serif;
@@ -83,7 +83,20 @@ nav{
 
   a{
     font-family: $sansSerifFont;
+    color: $darkGray;
+    font-size: 14px;
+
+    &:hover{
+      color: $primaryMid;
+      text-decoration: none;
+    }
   }
+}
+
+.nav-primary{
+  height: 42px;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 a{
@@ -99,6 +112,31 @@ button{
   font-weight: 700;
 }
 
+
+
+#menu-menu-1 {
+  display: flex !important;
+}
+
+.menu-item {
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.sub-menu{
+  display: none;
+  list-style-type: none;
+  padding-left: 10px;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+  padding: 20px;
+  box-shadow: 2px 2px 8px $darkGray;
+
+}
+
 .primary-btn{
   background-color: rgba($lightGray, .9);
   color: $dark;
@@ -107,6 +145,74 @@ button{
     background-color: $primaryLight;
     color: $primaryDark;
     cursor: pointer;
+  }
+}
+
+.secondary-btn{
+  background-color: $white !important;
+  color: $dark;
+  border: 2px solid $midGray;
+
+  &:hover{
+    background-color: $primaryLight !important;
+    border: 2px solid $primaryLight;
+    color: $primaryDark;
+    cursor: pointer;
+  }
+}
+
+.navTopRight{
+  text-align: right;
+
+  button{
+    margin-top: 24px;
+  }
+}
+
+.menu-item i{
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.navContact{
+
+  a{
+    font-family: $sansSerifFont;
+    color: $darkGray;
+    margin-left: 12px;
+    position: relative;
+    top: 12px;
+
+    &:hover{
+      color: $primaryMid;
+    }
+  }
+}
+
+.searchBarContainer{
+  width: 100%;
+  background-color: $lightGray;
+  height: 40px;
+  z-index: 100;
+  text-align: center;
+  display: none;
+}
+
+#searchNav{
+  background-color: transparent;
+  border: none;
+  max-width: 1120px;
+  width: 100%;
+  font-size: 14px;
+  padding-left: 20px;
+  height: 40px;
+  outline: none;
+
+  &:focus{
+    border: 0;
+    outline: none;
   }
 }
 
