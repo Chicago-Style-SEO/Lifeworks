@@ -1,0 +1,189 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+/* CHICAGO STYLE SEO ADDED STYLES */
+
+/* VARIABLES */
+
+$primaryDark: #2D3F54;
+$primaryLight: #7ECEFD;
+$primaryMid: #265EA4;
+$accent: #FF7F66;
+$dark: #121212;
+$darkGray: #555485;
+$midGray: #D6D4D1;
+$lightGray: lighten($midGray, 50%);
+$offWhite: lighten($midGray, 20%);
+$white: #FFFFFF;
+
+$sansSerifFont: 'Lato', sans-serif;
+$serifFont: 'Lora', serif;
+
+/* BREAKPOINTS */
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+/* GLOBALS */
+body{
+  font-family: $serifFont;
+  font-size: 18px;
+}
+
+h1{
+  font-family: $sansSerifFont;
+}
+
+h2{
+  font-family: $sansSerifFont;
+}
+
+h3{
+  font-family: $sansSerifFont;
+}
+
+h4{
+  font-family: $sansSerifFont;
+}
+
+h5{
+  font-family: $sansSerifFont;
+}
+
+h6{
+  font-family: $sansSerifFont;
+}
+
+p{
+  font-family: $serifFont;
+  font-size: 18px;
+}
+
+nav{
+
+  a{
+    font-family: $sansSerifFont;
+  }
+}
+
+a{
+  font-family: inherit;
+}
+
+button{
+  padding: 12px 24px;
+  text-align: center;
+  border: none;
+  font-family: $sansSerifFont;
+  transition: all .3s ease;
+  font-weight: 700;
+}
+
+.primary-btn{
+  background-color: rgba($lightGray, .9);
+  color: $dark;
+
+  &:hover{
+    background-color: $primaryLight;
+    color: $primaryDark;
+    cursor: pointer;
+  }
+}
+
+/* SLIDER STYLES */
+.slider-container{
+  padding: 0;
+
+  .slider{
+    width: 100%;
+
+    .sliderImage{
+      width: 100%;
+      height: auto;
+    }
+
+    .sliderTextContainer{
+      width: 100%;
+      position: absolute;
+      top: 212px;
+      text-align: center;
+      color: $lightGray;
+      @media (max-width: $screen-sm-max){
+        top: 120px;
+      }
+      @media (max-width: $screen-xs-max) {
+        top: 60px;
+      }
+
+      h2{
+        margin-bottom: 36px;
+        text-shadow: 2px 2px 6px $dark;
+        font-style: italic;
+        font-size: 250%;
+      }
+
+      h4{
+        text-shadow: 2px 2px 6px $dark;
+      }
+
+      button{
+        margin-top: 36px;
+      }
+    }
+  }
+}
+
+.slick-next, .slick-prev{
+  z-index: 20;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: transparent;
+  border: 2px solid $lightGray !important;
+  border-radius: 20px;
+}
+
+.slick-next{
+  right: 25px !important;
+}
+.slick-prev{
+  left: 25px !important;
+}
+
+.slick-next:before{
+  font-size: 42px !important;
+  position: relative;
+  right: 3px;
+}
+
+.slick-prev:before{
+  font-size: 42px !important;
+  position: relative;
+  right: 3px;
+}
+
+.slick-prev:before, .slick-next:before{
+  background-color: transparent !important;
+  color: #FFF !important;
+}
+
+/* END SLIDER STYLES */
