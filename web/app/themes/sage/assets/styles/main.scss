@@ -52,10 +52,12 @@ body{
 
 h1{
   font-family: $sansSerifFont;
+  margin-bottom: 24px;
 }
 
 h2{
   font-family: $sansSerifFont;
+  margin-bottom: 24px;
 }
 
 h3{
@@ -79,6 +81,11 @@ p{
   font-size: 18px;
 }
 
+.banner hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 nav{
 
   a{
@@ -94,9 +101,27 @@ nav{
 }
 
 .nav-primary{
-  height: 42px;
   max-width: 1120px;
   margin: 0 auto;
+
+  li{
+    padding: 20px 0px;
+    transition: all .3s ease;
+
+    &:hover{
+      background-color: $primaryDark;
+
+      a{
+        color: $white;
+      }
+    }
+  }
+
+  .active{
+    a{
+      color: $primaryDark;
+    }
+  }
 }
 
 a{
@@ -112,10 +137,17 @@ button{
   font-weight: 700;
 }
 
-
+.banner{
+  border-bottom: 1px solid $midGray;
+}
+.wrap{
+  margin-top: 24px;
+  width: 100%;
+}
 
 #menu-menu-1 {
   display: flex !important;
+  position: relative;
 }
 
 .menu-item {
@@ -123,18 +155,45 @@ button{
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .sub-menu{
   display: none;
   list-style-type: none;
-  padding-left: 10px;
   position: absolute;
+  top: 68px;
+  padding-left: 0;
   background-color: white;
   z-index: 100;
-  padding: 20px;
-  box-shadow: 2px 2px 8px $darkGray;
+  box-shadow: 0px 2px 8px $darkGray;
 
+  li{
+    border-bottom: 1px solid $midGray;
+    padding: 12px 24px;
+
+    &:hover{
+      background-color: $white;
+
+      a{
+        color: $primaryDark;
+      }
+    }
+
+    a{
+      color: $darkGray !important;
+    }
+  }
+
+}
+
+.main{
+  padding: 48px 0px 0px 0px;
+}
+
+.page-header{
+  display: none;
 }
 
 .primary-btn{
@@ -216,6 +275,11 @@ button{
   }
 }
 
+main .fluid-container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /* SLIDER STYLES */
 .slider-container{
   padding: 0;
@@ -293,3 +357,20 @@ button{
 }
 
 /* END SLIDER STYLES */
+
+/* 3 COLUMN SECTION STYLES */
+
+.threeColumnSection{
+  background-color: $lightGray;
+  margin-top: 60px;
+}
+
+.imageColumn{
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* END 3 COLUMN SECTION STYLES */

@@ -44,10 +44,53 @@ use Roots\Sage\Wrapper;
             </div>
         </div>
     <?php endif; ?>
+    <!-- End Slick Slider -->
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
+            <!-- 3 column section - custom post type -->
+            <?php if( get_field('section_title') ): ?>
+                <div class="fluid-container threeColumnSection">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h2><?= get_field('section_title'); ?></h2>
+                                <p><?= get_field('section_description'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <?php while( have_rows('3_columns_area') ): the_row();
+                                $columnImage = get_sub_field('3column_image');
+                                $columnImageText = get_sub_field('section_image_text');
+                                $columnImageLink= get_sub_field('section_image_link');
+
+                                ?>
+                                <div class="col-md-4 imageColumn">
+                                    <a href="<?= $columnImageLink ?>">
+                                        <img src="<?= $columnImage ?>">
+                                        <div class="imageColumn-overlay">
+                                            <p><?= $columnImageText ?></p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            <?php endwhile; ?>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <a href="<?= get_field('section_button_link'); ?>"><button class="secondary-btn"><?= get_field('section_button_text'); ?></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <?php endif; ?>
+            <!-- END 3 Column Section -->
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
           <aside class="sidebar">
