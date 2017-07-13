@@ -27,7 +27,7 @@ $primaryLight: #7ECEFD;
 $primaryMid: #265EA4;
 $accent: #FF7F66;
 $dark: #121212;
-$darkGray: #555485;
+$darkGray: #555458;
 $midGray: #D6D4D1;
 $lightGray: lighten($midGray, 12%);
 $offWhite: lighten($midGray, 15%);
@@ -81,6 +81,16 @@ p{
   font-size: 18px;
 }
 
+a{
+  transition: all .3s ease;
+  font-family: inherit;
+
+  &:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
 .banner hr{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -104,6 +114,10 @@ nav{
   max-width: 1120px;
   margin: 0 auto;
 
+  @media (max-width: $screen-md-max) {
+    display: none;
+  }
+
   li{
     padding: 20px 0px;
     transition: all .3s ease;
@@ -124,8 +138,61 @@ nav{
   }
 }
 
-a{
-  font-family: inherit;
+.nav-mobile{
+  display: none;
+  width: 100%;
+  height: 60px;
+  background-color: $primaryDark;
+  transition: all .3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 125;
+
+  &.active{
+    height: 100%;
+    background-color: $primaryMid;
+  }
+
+  @media (max-width: $screen-md-max) {
+    display: block;
+  }
+
+  #menu-mobile-menu{
+    display: none;
+    z-index: 140;
+    margin-top: 60px;
+
+    &.active{
+      display: block;
+    }
+  }
+
+  i{
+    color: $offWhite;
+    font-size: 36px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    
+    &:hover{
+      cursor: pointer;
+    }
+    &.active{
+      display: none;
+    }
+  }
+
+  li{
+    border-bottom: 1px solid rgba($lightGray, .1);
+    padding: 20px;
+
+    a{
+      color: $white;
+      font-size: 40px;
+    }
+  }
+
 }
 
 button{
@@ -199,6 +266,7 @@ button{
 .primary-btn{
   background-color: rgba($lightGray, .9);
   color: $dark;
+  transition: all .3s ease;
 
   &:hover{
     background-color: $primaryLight;
@@ -211,6 +279,7 @@ button{
   background-color: $white !important;
   color: $dark;
   border: 2px solid $midGray;
+  transition: all .3s ease;
 
   &:hover{
     background-color: $primaryLight !important;
@@ -220,11 +289,53 @@ button{
   }
 }
 
+.transparent-btn{
+  background-color: transparent!important;
+  color: $dark;
+  border: 2px solid $midGray;
+  transition: all .3s ease;
+
+  &:hover{
+    background-color: $primaryDark !important;
+    border: 2px solid $primaryDark;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.navTopContainer{
+  @media (max-width: $screen-md-max) {
+    position: relative;
+    top: 60px;
+    height: 60px;
+    z-index: 10;
+    background-color: $white;
+    width: 100% !important;
+
+    img{
+      height: 60px;
+    }
+  }
+}
+
+header{
+  @media (max-width: $screen-md-max) {
+    z-index: 10;
+  }
+}
+
 .navTopRight{
   text-align: right;
 
   button{
     margin-top: 24px;
+  }
+
+  @media (max-width: $screen-md-max) {
+
+    .secondary-btn{
+      display: none;
+    }
   }
 }
 
@@ -247,6 +358,10 @@ button{
     &:hover{
       color: $primaryMid;
     }
+  }
+  @media (max-width: $screen-md-max) {
+   height: 60px;
+    padding-top: 5px;
   }
 }
 
@@ -366,11 +481,116 @@ main .fluid-container{
 }
 
 .imageColumn{
+  width: 100%;
 
   img{
     width: 100%;
     height: auto;
+    position: relative;
+  }
+
+  .imageColumn-overlay{
+    height: 50px;
+    text-align: center;
+  }
+
+  .imageColumn-overlay{
+
+    p{
+      width: auto;
+      display: block;
+      padding: 10px;
+      position: relative;
+      top: -50px;
+      background-color: rgba($dark, .6);
+      color: $white;
+      font-family: $sansSerifFont;
+    }
   }
 }
 
 /* END 3 COLUMN SECTION STYLES */
+
+/* 2 BUTTON SECTION STYLES */
+
+.two-button-section{
+
+  button{
+    margin-top: 24px;
+  }
+}
+
+/* END 2 BUTTON SECTION STYLES */
+
+
+/* 3 COLUMN MAPS SECTION STYLES */
+
+.mapsSection{
+  background-color: $lightGray;
+
+  img{
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  p{
+    font-family: $serifFont;
+  }
+  a{
+    font-family: $sansSerifFont;
+    color: $dark;
+    font-weight: 700;
+
+    &:hover{
+      color: $primaryMid;
+    }
+  }
+}
+
+/* END 3 COLUMN MAPS SECTION STYLES */
+
+/* FOOTER STYLES */
+
+footer{
+  background-color: darken($darkGray, 18%);
+  color: $lightGray;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h3{
+    padding-bottom: 12px;
+    border-bottom: 1px solid $lightGray;
+    margin-bottom: 24px;
+  }
+
+  input[type="text"]{
+    width: 100%;
+    padding: 10px;
+  }
+
+  a{
+    color: $primaryLight;
+
+    &:hover{
+      color: $white;
+    }
+  }
+
+  .transparent-btn{
+    padding: 10px 20px;
+    color: $lightGray;
+    font-size: 18px !important;
+    text-transform: uppercase;
+    float: right;
+    position: relative;
+    top: 20px;
+
+    &:hover{
+      color: $dark;
+      background-color: $white !important;
+      border-color: $white;
+    }
+  }
+}
+
+/* END FOOTER STYLES */

@@ -1,5 +1,15 @@
 <header class="banner">
-  <div class="container">
+    <nav class="nav-mobile">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times-circle-o active" aria-hidden="true"></i>
+
+        <?php
+        if (has_nav_menu('mobile_navigation')) :
+            wp_nav_menu(['theme_location' => 'mobile_navigation', 'menu_class' => 'nav']);
+        endif;
+        ?>
+    </nav>
+  <div class="container navTopContainer">
       <div class="navTop">
           <div class="row">
               <div class="col-md-6 navTopLeft">

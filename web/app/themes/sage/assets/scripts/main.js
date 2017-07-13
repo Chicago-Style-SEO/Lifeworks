@@ -76,8 +76,14 @@
 
 })(jQuery); // Fully reference jQuery after this point.
 
-jQuery(".menu-item").hover(function () {
+jQuery(".nav-primary .menu-item").hover(function () {
    jQuery(this).children('.sub-menu').toggle();
+});
+
+jQuery(".nav-mobile i").click(function(){
+   jQuery(".nav-mobile").toggleClass("active");
+   jQuery("#menu-mobile-menu").toggleClass("active");
+    jQuery(".nav-mobile i").toggleClass("active");
 });
 
 jQuery(".menu-search").click(function(){

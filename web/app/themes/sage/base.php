@@ -83,12 +83,71 @@ use Roots\Sage\Wrapper;
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <a href="<?= get_field('section_button_link'); ?>"><button class="secondary-btn"><?= get_field('section_button_text'); ?></button></a>
+                                <a href="<?= get_field('section_button_link'); ?>"><button class="transparent-btn"><?= get_field('section_button_text'); ?>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+            <?php endif; ?>
+            <!-- END 3 Column Section -->
+            <!-- 2 Button Section - custom post type -->
+            <?php if( get_field('button_section_title') ): ?>
+                <div class="fluid-container two-button-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="text-center"><?= get_field('button_section_title'); ?></h2>
+                                <p><?= get_field('button_section_text'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                           <div class="col-md-4 text-center">
+                               <a href="<?= get_field('button_one_link'); ?>"><button class="transparent-btn"><?= get_field('button_one_icon'); ?>&nbsp;&nbsp;&nbsp;&nbsp;<?= get_field('button_one_text'); ?></button></a>
+                           </div>
+                            <div class="col-md-4 text-center">
+                                <a href="<?= get_field('button_two_link'); ?>"><button class="transparent-btn"><?= get_field('button_two_text'); ?>&nbsp;&nbsp;&nbsp;&nbsp;<?= get_field('button_two_icon'); ?></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+            <!-- END 2 Button Section -->
+            <!-- 3 column map section - custom post type -->
+            <?php if( get_field('maps_section_title') ): ?>
+                <div class="fluid-container mapsSection">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h2><?= get_field('maps_section_title'); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <?php while( have_rows('maps_3_columns_area') ): the_row();
+                                $mapImage = get_sub_field('maps_3column_image');
+                                $address = get_sub_field('maps_address');
+                                $mapLink= get_sub_field('map_link');
+                                $city= get_sub_field('map_location_title');
+
+                                ?>
+                                <div class="col-md-4 imageColumn text-center">
+                                    <h3><?= $city ?></h3>
+                                    <img src="<?= $mapImage ?>">
+                                    <p><?= $address ?></p>
+                                    <a href="<?= $mapLink ?>">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i> Getting Here
+                                    </a>
+                                </div>
+
+                            <?php endwhile; ?>
+                        </div>
+                    </div>
+                </div>
             <?php endif; ?>
             <!-- END 3 Column Section -->
         </main><!-- /.main -->
