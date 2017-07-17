@@ -84,11 +84,16 @@ p{
 a{
   transition: all .3s ease;
   font-family: inherit;
+  color: $primaryMid !important;
 
   &:hover{
     text-decoration: none;
     cursor: pointer;
   }
+}
+
+.pageTitle{
+  font-weight: 700;
 }
 
 .banner hr{
@@ -549,9 +554,173 @@ main .fluid-container{
 
 /* END 3 COLUMN MAPS SECTION STYLES */
 
+
+/* PRIMARY SIDEBAR PAGE TEMPLATE STYLES */
+.primarySidebarPageWrapper{
+  margin-top: 48px;
+  margin-bottom: 48px;
+
+  main{
+
+    img{
+      margin-bottom: 36px;
+    }
+  }
+}
+
+.calloutSingleButtonContainer{
+  background-color: $lightGray;
+  padding: 60px 0px;
+  border-top: 2px solid $dark;
+
+  h2{
+    font-weight: 700;
+  }
+  p{
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.two-button-section-subpage{
+  background-color: $lightGray !important;
+  padding: 60px 0px !important;
+
+  h2{
+    text-align: left;
+  }
+  p{
+    text-align: left;
+  }
+}
+
+/* THIS STYLING MAY NEED TO CHANGE WHEN LIVE */
+aside{
+
+  h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .widget{
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+
+  button{
+    margin-top: 12px !important;
+  }
+
+  .text-5, .text-9{
+    border: 2px solid $darkGray;
+    background-color: $lightGray;
+
+    button{
+      display: block !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      border-color: $darkGray;
+    }
+  }
+}
+
+.blogSidebar{
+
+  button{
+    margin-top: 12px !important;
+  }
+}
+
+/* END PRIMARY SIDEBAR PAGE TEMPLATE STYLES */
+
+/* FULLWIDTH TEMPLATE STYLES */
+
+.fullwidthPageWrapper{
+  padding: 60px 0px;
+}
+
+/* TEAM MEMBER STYLING */
+
+.teamMember{
+  text-align: center;
+
+  h6{
+    margin-top: 12px;
+    font-weight: 700;
+  }
+
+  .teamMemberImage{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* END FULLWIDTH TEMPALTE STYLES */
+
+/* BLOG PAGE STYLES */
+
+.blog{
+
+  .post{
+    time{
+      display: inline-block;
+    }
+    p{
+      display: inline-block;
+    }
+  }
+}
+
+.postListingFooter{
+
+  .post-categories{
+    padding-left: 0px;
+    list-style-type: none;
+    position: relative;
+    top: -5px;
+    margin-bottom: 0px !important;
+
+    li{
+
+      a{
+        height: 18px;
+        font-size: 14px;
+        color: $darkGray;
+
+        &:hover{
+          color: $
+        }
+      }
+    }
+  }
+
+  p{
+     font-size: 14px;
+     height: 18px;
+     margin-bottom: 0px !important;
+  }
+
+
+  hr{
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid $midGray;
+    margin: 1em 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* END BLOG PAGE STYLES */
+
+
 /* FOOTER STYLES */
 
-footer{
+.content-info{
   background-color: darken($darkGray, 18%);
   color: $lightGray;
   padding-top: 60px;

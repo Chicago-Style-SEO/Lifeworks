@@ -26,3 +26,8 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+function modify_read_more_link() {
+    return '<a class="transparent-btn" href="' . get_permalink() . '">Read More</a>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
