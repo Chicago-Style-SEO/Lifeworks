@@ -10,6 +10,10 @@
               </div>
           <div class="col-md-8">
               <?php the_excerpt(); ?>
+              <div class="commentCountBlogItem">
+                  <i class="fa fa-comment-o" aria-hidden="true"></i>
+                  <?php comments_number( '0', '1', '%' ); ?>
+              </div>
           </div>
       </div>
       <div class="row postListingFooter">

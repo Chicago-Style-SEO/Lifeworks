@@ -13,7 +13,9 @@
       <div class="navTop">
           <div class="row">
               <div class="col-md-6 navTopLeft">
-                  <img src="<?= get_template_directory_uri() . '/dist/images/lifeworks-psychotherapy-logo.png'; ?>" class="navLogo">
+                  <a href="/">
+                      <img src="<?= get_template_directory_uri() . '/dist/images/lifeworks-psychotherapy-logo.png'; ?>" class="navLogo">
+                  </a>
               </div>
               <div class="col-md-6 navTopRight">
                 <div class="navContact">
@@ -35,5 +37,6 @@
     </nav>
     <div class="searchBarContainer">
         <input type="search" placeholder="Enter your search terms here" name="searchSite" id="searchNav" onkeypress="return runSearch(event)">
+        <button style="transparent-btn" id="searchButton">Search</button>
     </div>
 </header>

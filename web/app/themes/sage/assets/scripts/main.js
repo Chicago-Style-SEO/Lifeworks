@@ -75,10 +75,10 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
-
-jQuery(".nav-primary .menu-item").hover(function () {
-   jQuery(this).children('.sub-menu').toggle();
-});
+//
+// jQuery(".nav-primary .menu-item").hover(function () {
+//    jQuery(this).children('.sub-menu').toggle();
+// });
 
 jQuery(".nav-mobile i").click(function(){
    jQuery(".nav-mobile").toggleClass("active");
@@ -96,3 +96,8 @@ function runSearch(e) {
         return false;
     }
 }
+
+jQuery("#searchButton").click(function(){
+    alert("working");
+    window.location.href = "/search/" + jQuery("#searchNav").val();
+});

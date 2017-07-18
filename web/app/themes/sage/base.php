@@ -172,7 +172,7 @@ get_template_part('templates/header');
             </main><!-- /.main -->
             <?php if (Setup\display_sidebar()) : ?>
                 <aside class="sidebar col-md-3">
-                    <?php if( is_home() ): ?>
+                    <?php if( is_home() || is_single() ): ?>
                         <?php if ( dynamic_sidebar('sidebar-blog') ) : else : endif; ?>
                     <?php elseif( !is_home() ): ?>
                         <?php include Wrapper\sidebar_path(); ?>
