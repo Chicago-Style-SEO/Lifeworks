@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="786add54-22d7-4299-a731-6f9762b57b42" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/screenshot.png" afterPath="$PROJECT_DIR$/web/app/themes/sage/screenshot.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/assets/scripts/main.js" afterPath="$PROJECT_DIR$/web/app/themes/sage/assets/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss" afterPath="$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/base-template-fullwidth-page.php" afterPath="$PROJECT_DIR$/web/app/themes/sage/base-template-fullwidth-page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/base.php" afterPath="$PROJECT_DIR$/web/app/themes/sage/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/lib/setup.php" afterPath="$PROJECT_DIR$/web/app/themes/sage/lib/setup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/templates/footer.php" afterPath="$PROJECT_DIR$/web/app/themes/sage/templates/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/functions.php" afterPath="$PROJECT_DIR$/web/app/themes/sage/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/templates/content.php" afterPath="$PROJECT_DIR$/web/app/themes/sage/templates/content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/themes/sage/templates/header.php" afterPath="$PROJECT_DIR$/web/app/themes/sage/templates/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,34 +25,10 @@
       <file leaf-file-name="base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/themes/sage/base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1820">
-              <caret line="123" column="40" lean-forward="false" selection-start-line="123" selection-start-column="40" selection-end-line="123" selection-end-column="49" />
+            <state relative-caret-position="507">
+              <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
               <folding>
-                <element signature="e#3913#3919#0#HTML" expanded="true" />
-                <element signature="e#3919#3925#0#HTML" expanded="true" />
-                <element signature="e#3925#3931#0#HTML" expanded="true" />
-                <element signature="e#3931#3937#0#HTML" expanded="true" />
-                <element signature="e#5139#5145#0#HTML" expanded="true" />
-                <element signature="e#5145#5151#0#HTML" expanded="true" />
-                <element signature="e#5151#5157#0#HTML" expanded="true" />
-                <element signature="e#5157#5163#0#HTML" expanded="true" />
-                <element signature="e#5457#5463#0#HTML" expanded="true" />
-                <element signature="e#5463#5469#0#HTML" expanded="true" />
-                <element signature="e#5469#5475#0#HTML" expanded="true" />
-                <element signature="e#5475#5481#0#HTML" expanded="true" />
-                <marker date="1499957518000" expanded="true" signature="248:439" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-heroSlider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/template-heroSlider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding>
-                <element signature="e#6#50#0#PHP" expanded="true" />
+                <marker date="1500562714000" expanded="true" signature="234:415" ph="..." />
               </folding>
             </state>
           </provider>
@@ -59,8 +37,18 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+            <state relative-caret-position="495">
+              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,39 +57,21 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="158" column="3" lean-forward="true" selection-start-line="158" selection-start-column="3" selection-end-line="158" selection-end-column="3" />
+            <state relative-caret-position="354">
+              <caret line="847" column="1" lean-forward="true" selection-start-line="847" selection-start-column="1" selection-end-line="847" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/footer.php">
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/lib/setup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="450">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,18 +79,28 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+            <state relative-caret-position="482">
+              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/sidebar.php">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/themes/sage/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,13 +119,26 @@
       <find>fluid</find>
       <find>imageColumn</find>
       <find>sidebar</find>
-      <find>btn</find>
       <find>register_sidebar(['name' =&gt; __('Blog', 'sage'),'id' =&gt; 'sidebar-blog','before_widget' =&gt; '&lt;section class=&quot;widget %1$s %2$s&quot;&gt;','after_widget' =&gt; '&lt;/section&gt;','before_title' =&gt; '&lt;h3&gt;','after_title' =&gt; '&lt;/h3&gt;']);</find>
       <find>register_sidebar</find>
       <find>breakpoint</find>
       <find>navTop</find>
       <find>navTopContainer</find>
       <find>menu-mobile-menu</find>
+      <find>container</find>
+      <find>button</find>
+      <find>btn</find>
+      <find>.teamMember h6</find>
+      <find>.teamMember</find>
+      <find>.text-5</find>
+      <find>text-5</find>
+      <find>team_member</find>
+      <find>slider</find>
+      <find>.secondar</find>
+      <find>secondary-btn</find>
+      <find>blog</find>
+      <find>.postListingFooter</find>
+      <find>.blog</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -167,15 +160,21 @@
         <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/B91535A7-6145-4A8A-9DF5-8FC07AD86AE5/content-page-front-fullwidth.php" />
         <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/94483182-84CC-4264-A7B9-8F037B74C100/custom.css" />
         <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/F3A593EC-A341-4AC8-8E7D-A807FA9C4CA1/custom.css" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/templates/content.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/template-heroSlider.php" />
         <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/DA56333C-AC6E-4358-8B35-4B5D1AC30643/content-page-front-fullwidth.php" />
         <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/C0549695-D90B-471C-AC5E-D65EFF8D9136/custom.css" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/base.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/templates/footer.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/lib/setup.php" />
-        <option value="$PROJECT_DIR$/web/app/themes/sage/templates/header.php" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/base-template-fullwidth-page.php" />
+        <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/B0354B2F-F7DD-4506-85AF-10E202397648/main-73bfe514e2.css" />
+        <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/A16E0E39-9B06-40E0-8EB4-4D1448F290ED/main-73bfe514e2.css" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/functions.php" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/base.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/scripts/main.js" />
+        <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/A2FA44A7-2A13-4908-B01B-B85F8894DE24/main-a81b10f63b.js" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/templates/header.php" />
+        <option value="$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/4D3CB57D-4904-4C93-82CA-58CEB4CD232C/main-8384560fbb.css" />
+        <option value="$PROJECT_DIR$/web/app/themes/sage/templates/content.php" />
         <option value="$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss" />
       </list>
     </option>
@@ -191,7 +190,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="831" />
@@ -212,8 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -362,7 +360,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,11 +394,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,6 +405,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -513,25 +512,28 @@
       <workItem from="1499648539135" duration="9000" />
       <workItem from="1499704305965" duration="4692000" />
       <workItem from="1499878959209" duration="9958000" />
+      <workItem from="1500474625481" duration="940000" />
+      <workItem from="1500475855928" duration="2968000" />
+      <workItem from="1500493807119" duration="86000" />
+      <workItem from="1500559649435" duration="5695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34435000" />
+    <option name="totallyTimeSpent" value="44124000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="23" width="1440" height="831" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2326389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -539,6 +541,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -553,91 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/template-heroSlider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#3913#3919#0#HTML" expanded="true" />
-            <element signature="e#3919#3925#0#HTML" expanded="true" />
-            <element signature="e#3925#3931#0#HTML" expanded="true" />
-            <element signature="e#3931#3937#0#HTML" expanded="true" />
-            <element signature="e#5139#5145#0#HTML" expanded="true" />
-            <element signature="e#5145#5151#0#HTML" expanded="true" />
-            <element signature="e#5151#5157#0#HTML" expanded="true" />
-            <element signature="e#5157#5163#0#HTML" expanded="true" />
-            <element signature="e#5457#5463#0#HTML" expanded="true" />
-            <element signature="e#5463#5469#0#HTML" expanded="true" />
-            <element signature="e#5469#5475#0#HTML" expanded="true" />
-            <element signature="e#5475#5481#0#HTML" expanded="true" />
-            <marker date="1499957518000" expanded="true" signature="248:439" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/front-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/550B516C-9624-466B-AC9A-0D793B82C034/content-page-front-fullwidth.php" />
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/template-heroSlider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="e#6#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/550B516C-9624-466B-AC9A-0D793B82C034/content-page-front-fullwidth.php" />
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/43DB505F-F189-4093-9106-595449D07D69/.htaccess" />
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/DE7704B5-5A33-4844-B707-63F6719103A7/.htaccess" />
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/CA284672-0E3C-4306-AAF1-97CCB6AE675E/.htaccess" />
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/96174BCF-B33A-462A-AEBC-319D89C2AC5F/.htaccess" />
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/24E65CEF-F483-4B23-BC1D-73E0F8BAC966/entry-slideshow-testimonials.php" />
     <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/BE7852AB-E08D-483F-A041-4A920DAFD54A/page-homepage.php" />
     <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/6F12749C-C66E-46CA-8904-4080E41F1648/header.php" />
     <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/5E108DF6-9876-43B0-9729-3AB8E2EA51F0/header.php" />
@@ -677,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="57" lean-forward="true" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,15 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,34 +609,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/FFC053F8-4AF5-47A2-B440-374ECB980532/content-page-front-fullwidth.php">
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/FFC053F8-4AF5-47A2-B440-374ECB980532/content-page-front-fullwidth.php" />
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/C0549695-D90B-471C-AC5E-D65EFF8D9136/custom.css" />
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/DA56333C-AC6E-4358-8B35-4B5D1AC30643/content-page-front-fullwidth.php" />
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/content-search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/C0549695-D90B-471C-AC5E-D65EFF8D9136/custom.css">
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="205" column="32" lean-forward="false" selection-start-line="205" selection-start-column="32" selection-end-line="205" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/DA56333C-AC6E-4358-8B35-4B5D1AC30643/content-page-front-fullwidth.php">
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="210" column="28" lean-forward="true" selection-start-line="210" selection-start-column="28" selection-end-line="210" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/functions.php">
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/9304E0B0-E677-4F06-B718-28A4E0869FB2/custom.css" />
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/template-heroSlider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#6#50#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/B0354B2F-F7DD-4506-85AF-10E202397648/main-73bfe514e2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="6" column="169262" lean-forward="false" selection-start-line="6" selection-start-column="169262" selection-end-line="6" selection-end-column="169262" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -736,15 +662,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/head.php">
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/BC223DF7-7D62-484C-9030-EFB9321F8049/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="105" lean-forward="false" selection-start-line="8" selection-start-column="105" selection-end-line="8" selection-end-column="105" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/content-search.php">
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/A16E0E39-9B06-40E0-8EB4-4D1448F290ED/main-73bfe514e2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="6" column="167142" lean-forward="false" selection-start-line="6" selection-start-column="167142" selection-end-line="6" selection-end-column="167142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/base-template-primary-sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="69" column="29" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="69" selection-end-column="29" />
+          <folding>
+            <marker date="1500306996000" expanded="true" signature="234:415" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/base-template-fullwidth-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="57" />
+          <folding>
+            <marker date="1500476521000" expanded="true" signature="234:415" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/template-primary-sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+          <folding>
+            <marker date="1500562714000" expanded="true" signature="234:415" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/A2FA44A7-2A13-4908-B01B-B85F8894DE24/main-a81b10f63b.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="2" column="8056" lean-forward="false" selection-start-line="2" selection-start-column="8056" selection-end-line="2" selection-end-column="8056" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/dist/scripts/main-fc28484eeb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="2" column="3943" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="8052" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/dist/scripts/customizer-2d71a5cf56.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -754,88 +766,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/lib/setup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
-          <caret line="123" column="40" lean-forward="false" selection-start-line="123" selection-start-column="40" selection-end-line="123" selection-end-column="49" />
-          <folding>
-            <element signature="e#3913#3919#0#HTML" expanded="true" />
-            <element signature="e#3919#3925#0#HTML" expanded="true" />
-            <element signature="e#3925#3931#0#HTML" expanded="true" />
-            <element signature="e#3931#3937#0#HTML" expanded="true" />
-            <element signature="e#5139#5145#0#HTML" expanded="true" />
-            <element signature="e#5145#5151#0#HTML" expanded="true" />
-            <element signature="e#5151#5157#0#HTML" expanded="true" />
-            <element signature="e#5157#5163#0#HTML" expanded="true" />
-            <element signature="e#5457#5463#0#HTML" expanded="true" />
-            <element signature="e#5463#5469#0#HTML" expanded="true" />
-            <element signature="e#5469#5475#0#HTML" expanded="true" />
-            <element signature="e#5475#5481#0#HTML" expanded="true" />
-            <marker date="1499957518000" expanded="true" signature="248:439" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/template-heroSlider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        <state relative-caret-position="480">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+        <state relative-caret-position="482">
+          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/9304E0B0-E677-4F06-B718-28A4E0869FB2/custom.css">
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/shreenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/dist/styles/main-498b44297e.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="6" column="165922" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="171656" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/Cleanup At Startup/Transmit/4D3CB57D-4904-4C93-82CA-58CEB4CD232C/main-8384560fbb.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4355">
+          <caret line="6" column="171656" lean-forward="false" selection-start-line="6" selection-start-column="171656" selection-end-line="6" selection-end-column="171656" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/themes/sage/templates/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/themes/sage/assets/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="158" column="3" lean-forward="true" selection-start-line="158" selection-start-column="3" selection-end-line="158" selection-end-column="3" />
+        <state relative-caret-position="354">
+          <caret line="847" column="1" lean-forward="true" selection-start-line="847" selection-start-column="1" selection-end-line="847" selection-end-column="1" />
           <folding />
         </state>
       </provider>

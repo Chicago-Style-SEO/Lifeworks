@@ -31,10 +31,13 @@ get_template_part('templates/header');
                         <?php while( have_rows('team_member') ): the_row();
                         $teamMemberName = get_sub_field('team_member_name');
                         $teamMemberImage = get_sub_field('team_member_image');
+                        $teamMemberPage = get_sub_field('team_member_page');
                         ?>
                         <div class="col-md-3 teamMember">
-                            <img src="<?= $teamMemberImage ?>" class="teamMemberImage">
-                            <h6><?= $teamMemberName ?></h6>
+                            <a href="<?= $teamMemberPage ?>">
+                                <img src="<?= $teamMemberImage ?>" class="teamMemberImage">
+                                <h6><?= $teamMemberName ?></h6>
+                            </a>
                         </div>
                         <?php endwhile; ?>
                     </div>

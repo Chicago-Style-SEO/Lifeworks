@@ -32,6 +32,7 @@ $midGray: #D6D4D1;
 $lightGray: lighten($midGray, 12%);
 $offWhite: lighten($midGray, 15%);
 $white: #FFFFFF;
+$highlight: #27ae60;
 
 $sansSerifFont: 'Lato', sans-serif;
 $serifFont: 'Lora', serif;
@@ -87,9 +88,9 @@ a{
   color: $primaryMid;
 
   &:hover{
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
-    color: $primaryLight;
+    color: $highlight;
   }
 }
 
@@ -119,6 +120,8 @@ nav{
 .nav-primary{
   max-width: 1120px;
   margin: 0 auto;
+  position: relative;
+
 
   @media (max-width: $screen-md-max) {
     display: none;
@@ -283,8 +286,8 @@ button{
   transition: all .3s ease;
 
   &:hover{
-    background-color: $primaryLight;
-    color: $primaryDark;
+    background-color: $primaryDark;
+    color: $white;
     cursor: pointer;
   }
 }
@@ -296,9 +299,9 @@ button{
   transition: all .3s ease;
 
   &:hover{
-    background-color: $primaryLight !important;
-    border: 2px solid $primaryLight;
-    color: $primaryDark;
+    background-color: $primaryDark !important;
+    border: 2px solid $primaryDark;
+    color: $white;
     cursor: pointer;
   }
 }
@@ -444,6 +447,10 @@ main .fluid-container{
   .slider{
     width: 100%;
 
+    @media (max-width: $screen-md-max){
+      margin-top: 65px;
+    }
+
     .sliderImage{
       width: 100%;
       height: auto;
@@ -455,8 +462,11 @@ main .fluid-container{
       top: 212px;
       text-align: center;
       color: $lightGray;
+      @media (max-width: $screen-md-max){
+        top: 150px;
+      }
       @media (max-width: $screen-sm-max){
-        top: 120px;
+        top: 100px;
       }
       @media (max-width: $screen-xs-max) {
         top: 60px;
@@ -467,10 +477,17 @@ main .fluid-container{
         text-shadow: 2px 2px 6px $dark;
         font-style: italic;
         font-size: 250%;
+
+        @media (max-width: $screen-sm-max){
+          font-size: 150%;
+        }
       }
 
       h4{
         text-shadow: 2px 2px 6px $dark;
+        @media (max-width: $screen-sm-max){
+          font-size: 100%;
+        }
       }
 
       button{
@@ -514,6 +531,25 @@ main .fluid-container{
 }
 
 /* END SLIDER STYLES */
+
+/* HOME CONTENT AREA */
+
+.homeSpecial{
+
+  @media (max-width: $screen-md-max){
+    width: 960px;
+    margin: auto;
+  }
+  @media (max-width: $screen-sm-max){
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+
+}
+
+/* END HOME CONTENT AREA */
 
 /* 3 COLUMN SECTION STYLES */
 
@@ -651,7 +687,7 @@ aside{
     margin-top: 12px !important;
   }
 
-  .text-5, .text-9{
+  .text-4, .text-9{
     border: 2px solid $darkGray;
     background-color: $lightGray;
 
@@ -687,6 +723,7 @@ aside{
   h6{
     margin-top: 12px;
     font-weight: 700;
+    margin-bottom: 30px;
   }
 
   .teamMemberImage{
@@ -719,6 +756,14 @@ aside{
       }
 
     }
+  }
+}
+
+.postTags{
+  min-height: 60px;
+
+  @media (max-width: $screen-sm-max){
+    min-height: 100px;
   }
 }
 
@@ -756,7 +801,6 @@ aside{
 
   p{
      font-size: 14px;
-     height: 18px;
      margin-bottom: 0px !important;
      padding-left: 10px;
   }
@@ -793,7 +837,7 @@ aside{
 }
 
 .blog article{
-  padding: 36px 36px 24px 36px;
+  padding: 15px 36px 36px 36px;
 }
 
 .blogReadMore{

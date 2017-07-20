@@ -22,7 +22,10 @@
                     <a href="mailto:info@lifeworkspsychotherapy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Get in Touch</a>
                     <a href="tel:1-847-568-1100"><i class="fa fa-phone" aria-hidden="true"></i> 847-568-1100</a>
                 </div>
-                  <button class="secondary-btn">En Español</button>
+                  <a href="http://www.lifeworkspsychotherapy.com/espanol/">
+                      <button class="secondary-btn">En Español</button>
+                  </a>
+
               </div>
           </div>
       </div>

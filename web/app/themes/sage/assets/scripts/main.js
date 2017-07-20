@@ -90,6 +90,10 @@ jQuery(".menu-search").click(function(){
   jQuery(".searchBarContainer").toggle('slow');
 });
 
+jQuery(".menu-item-type-gs_sim").click(function(){
+    jQuery(".searchBarContainer").toggle('slow');
+});
+
 function runSearch(e) {
     if (e.keyCode === 13) {
         window.location.href = "/search/" + jQuery("#searchNav").val();

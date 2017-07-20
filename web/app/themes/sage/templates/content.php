@@ -6,7 +6,11 @@
   <div class="entry-summary">
       <div class="row">
           <div class="col-md-3">
-              <?php the_post_thumbnail( 'thumbnail' ); ?>
+              <?php if( has_post_thumbnail() ) : ?>
+                  <?php the_post_thumbnail( 'thumbnail' ) ?>
+              <? else :?>
+                  <img src="<?php echo get_first_image('thumbnail'); ?>" class="attachment-thumbnail size-thumbnail wp-post-image">
+              <?php endif; ?>
               </div>
           <div class="col-md-8">
               <?php the_excerpt(); ?>
@@ -19,7 +23,7 @@
       <div class="row postListingFooter">
           <hr />
             <p><strong>Posted</strong>&nbsp;in&nbsp;<i><?php the_category(); ?></i></p><br>
-            <p style="width: 100%; margin-bottom: 24px !important;"><strong>Tagged</strong>&nbsp;in&nbsp;<i><?php the_tags(); ?></i></p>
+            <p style="width: 100%; margin-bottom: 24px !important; height: inherit !important;"><strong>Tagged</strong>&nbsp;in&nbsp;<i><?php the_tags(); ?></i></p>
           <hr />
       </div>
   </div>
