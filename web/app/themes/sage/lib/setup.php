@@ -30,6 +30,9 @@ function setup() {
     'primary_navigation' => __('Primary Navigation', 'sage')
   ]);
     register_nav_menus([
+        'header_navigation' => __('Header Navigation', 'sage')
+    ]);
+    register_nav_menus([
         'mobile_navigation' => __('Mobile Navigation', 'sage')
     ]);
 

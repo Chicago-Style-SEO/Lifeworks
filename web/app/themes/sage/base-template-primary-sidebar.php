@@ -37,6 +37,7 @@ get_template_part('templates/header');
 <!-- SINGLE BUTTON CALLOUT -->
 <?php if( get_field('callout_title') ): ?>
     <div class="container-fluid calloutSingleButtonContainer text-center">
+        <img src="<?= get_template_directory_uri() . '/dist/images/lwp-symbol.png'; ?>" class="calloutSingleImage">
         <h2><?= get_field('callout_title'); ?></h2>
         <p><?= get_field('callout_body_text'); ?></p>
         <a href="<?= get_field('callout_body_button_URL'); ?>"><button class="transparent-btn"><?= get_field('callout_body_button_text') ?></button></a>

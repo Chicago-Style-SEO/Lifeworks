@@ -18,14 +18,25 @@
                   </a>
               </div>
               <div class="col-md-6 navTopRight">
-                <div class="navContact">
-                    <a href="mailto:info@lifeworkspsychotherapy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Get in Touch</a>
-                    <a href="tel:1-847-568-1100"><i class="fa fa-phone" aria-hidden="true"></i> 847-568-1100</a>
-                </div>
-                  <a href="http://www.lifeworkspsychotherapy.com/espanol/">
-                      <button class="secondary-btn">En Español</button>
-                  </a>
-
+                  <span class="headerHeadline">Simply aware, fully alive.</span>
+<!--                <div class="navContact">-->
+<!--                    <a href="mailto:info@lifeworkspsychotherapy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Get in Touch</a>-->
+<!--                    <a href="tel:1-847-568-1100"><i class="fa fa-phone" aria-hidden="true"></i> 847-568-1100</a>-->
+<!--                </div>-->
+<!--                  <a href="http://www.lifeworkspsychotherapy.com/espanol/">-->
+<!--                      <button class="secondary-btn">En Español</button>-->
+<!--                  </a>-->
+                  <div class="headerNav">
+                      <?php
+                      if (has_nav_menu('header_navigation')) :
+                          wp_nav_menu(['theme_location' => 'header_navigation', 'menu_class' => 'nav']);
+                      endif;
+                      ?>
+                  </div>
+                  <div class="languageChange">
+                      <img src="<?= get_template_directory_uri() . '/dist/images/flag.png'; ?>" class="navLanguageIcon">
+                      <p>English</p>
+                  </div>
               </div>
           </div>
       </div>

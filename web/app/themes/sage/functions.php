@@ -60,3 +60,7 @@ function get_first_image() {
     return $thumb_img;
 }
 add_filter( 'get_first_image', 'thumbnail' );
+
+register_nav_menus([
+    'header_navigation' => __('Header Navigation', 'sage')
+]);

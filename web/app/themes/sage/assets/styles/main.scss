@@ -54,27 +54,35 @@ body{
 h1{
   font-family: $sansSerifFont;
   margin-bottom: 24px;
+  color: $primaryMid;
+  text-transform: uppercase;
 }
 
 h2{
   font-family: $sansSerifFont;
   margin-bottom: 24px;
+  color: $primaryMid;
+  text-transform: uppercase;
 }
 
 h3{
   font-family: $sansSerifFont;
+  text-transform: uppercase;
 }
 
 h4{
   font-family: $sansSerifFont;
+  text-transform: uppercase;
 }
 
 h5{
   font-family: $sansSerifFont;
+  text-transform: uppercase;
 }
 
 h6{
   font-family: $sansSerifFont;
+  text-transform: uppercase;
 }
 
 p{
@@ -94,6 +102,10 @@ a{
   }
 }
 
+button{
+  letter-spacing: .05rem;
+}
+
 .pageTitle{
   font-weight: 700;
 }
@@ -109,6 +121,7 @@ nav{
     font-family: $sansSerifFont;
     color: $darkGray;
     font-size: 14px;
+    text-transform: uppercase;
 
     &:hover{
       color: $primaryMid;
@@ -118,10 +131,8 @@ nav{
 }
 
 .nav-primary{
-  max-width: 1120px;
-  margin: 0 auto;
+  background-color: $primaryMid;
   position: relative;
-
 
   @media (max-width: $screen-md-max) {
     display: none;
@@ -145,11 +156,20 @@ nav{
         color: $white;
       }
     }
+
+    a{
+      color: $white;
+    }
+  }
+
+  i{
+    color: $white !important;
   }
 
   .active{
+    background-color: $primaryDark;
     a{
-      color: $primaryDark;
+      color: $white;
     }
   }
 }
@@ -211,6 +231,55 @@ nav{
 
 }
 
+.languageChange{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 32px 0px 0px;
+
+  p{
+    display: inline-block;
+    font-family: $sansSerifFont;
+    font-size: 12px;
+  }
+
+  img{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.headerHeadline{
+  font-size: 26px;
+  font-family: $sansSerifFont;
+  color: $primaryMid;
+  position: relative;
+  top: 48px;
+  right: 10px;
+}
+
+.headerNav{
+  position: relative;
+  top: 60px;
+
+  ul{
+
+    li{
+      text-align: right;
+
+      a{
+        font-family: $sansSerifFont;
+        color: $darkGray;
+        text-transform: uppercase;
+
+        &:hover{
+          color: $primaryMid;
+        }
+      }
+    }
+  }
+}
+
 button{
   padding: 12px 24px;
   text-align: center;
@@ -228,10 +297,12 @@ button{
   width: 100%;
 }
 
-#menu-menu-1 {
+#menu-menu-1, #menu-primary-menu {
   display: flex !important;
   position: relative;
-}
+  max-width: 1120px;
+  margin: 0 auto;
+} 
 
 .menu-item {
   flex: 1;
@@ -281,13 +352,13 @@ button{
 }
 
 .primary-btn{
-  background-color: rgba($lightGray, .9);
-  color: $dark;
+  background-color: $white;
+  color: $primaryDark;
   transition: all .3s ease;
 
   &:hover{
-    background-color: $primaryDark;
-    color: $white;
+    background-color: $primaryLight;
+    color: $primaryDark;
     cursor: pointer;
   }
 }
@@ -309,18 +380,46 @@ button{
 .transparent-btn{
   background-color: transparent!important;
   color: $dark;
-  border: 2px solid $midGray;
+  border: 2px solid $primaryDark;
   transition: all .3s ease;
 
   &:hover{
-    background-color: $primaryDark !important;
-    border: 2px solid $primaryDark;
+    background-color: $primaryLight !important;
+    border: 2px solid $primaryLight;
+    color: $primaryDark;
+    cursor: pointer;
+  }
+}
+
+.alternate-btn{
+  background-color: $accent!important;
+  color: $white;
+  border: 2px solid $accent !important;
+  transition: all .3s ease;
+
+  &:hover{
+    background-color: $primaryLight !important;
+    border: 2px solid $primaryLight !important;
     color: $white;
     cursor: pointer;
   }
 }
 
+.invert-btn{
+  background-color: $primaryLight !important;
+  color: $white !important;
+  transition: all .3s ease;
+
+  &:hover{
+    background-color: $white !important;
+    color: $primaryDark !important;
+    cursor: pointer;
+  }
+}
+
 .navTopContainer{
+  height: 175px;
+
   @media (max-width: $screen-md-max) {
     position: relative;
     top: 60px;
@@ -343,7 +442,9 @@ header{
 
 .navTopRight{
   text-align: right;
-
+  @media (max-width: $screen-md-max) {
+    display: none;
+  }
   button{
     margin-top: 24px;
   }
@@ -353,6 +454,12 @@ header{
     .secondary-btn{
       display: none;
     }
+  }
+}
+
+.navTopLeft{
+  .navLogo{
+    margin-top: 20px;
   }
 }
 
@@ -400,7 +507,7 @@ header{
 
 .searchBarContainer{
   width: 100%;
-  background-color: $lightGray;
+  background-color: $primaryDark;
   height: 40px;
   z-index: 100;
   text-align: center;
@@ -409,11 +516,13 @@ header{
   button{
     height: 40px;
     padding: 7px 20px;
+    background-color: $primaryMid;
+    color: $white;
 
     &:hover{
       cursor: pointer;
-      background-color: $primaryDark;
-      color: $white;
+      background-color: $white;
+      color: $primaryDark;
     }
   }
 }
@@ -427,6 +536,7 @@ header{
   padding-left: 20px;
   height: 40px;
   outline: none;
+  color: $white;
 
   &:focus{
     border: 0;
@@ -457,26 +567,32 @@ main .fluid-container{
     }
 
     .sliderTextContainer{
-      width: 100%;
+      width: 50%;
+      height: 100%;
       position: absolute;
-      top: 212px;
-      text-align: center;
-      color: $lightGray;
+      top: 0px;
+      left: 0px;
+      text-align: left;
+      color: $primaryDark;
+      background-color: rgba($white, .6);
+      padding-left: 120px;
+      padding-top: 300px;
+
       @media (max-width: $screen-md-max){
-        top: 150px;
+        top: 0px;
       }
       @media (max-width: $screen-sm-max){
-        top: 100px;
+        top: 0px;
       }
       @media (max-width: $screen-xs-max) {
-        top: 60px;
+        top: 0px;
       }
 
       h2{
         margin-bottom: 36px;
-        text-shadow: 2px 2px 6px $dark;
         font-style: italic;
         font-size: 250%;
+        color: $primaryDark !important;
 
         @media (max-width: $screen-sm-max){
           font-size: 150%;
@@ -484,7 +600,8 @@ main .fluid-container{
       }
 
       h4{
-        text-shadow: 2px 2px 6px $dark;
+        color: $primaryDark !important;
+
         @media (max-width: $screen-sm-max){
           font-size: 100%;
         }
@@ -642,17 +759,38 @@ main .fluid-container{
 }
 
 .calloutSingleButtonContainer{
-  background-color: $lightGray;
-  padding: 60px 0px;
-  border-top: 2px solid $dark;
+  background-color: $primaryMid;
+  padding: 120px 0px;
+  border-top: 4px solid $primaryLight;
 
   h2{
     font-weight: 700;
+    color: $white;
+    z-index: 3;
   }
   p{
     max-width: 650px;
     margin: auto;
     margin-bottom: 20px;
+    color: $white;
+    z-index: 3;
+  }
+  .calloutSingleImage{
+    position: absolute;
+    left: 60px;
+    top: -48px;
+    z-index: 1;
+  }
+
+  .transparent-btn{
+    background-color: $white !important;
+    border-color: $midGray !important;
+
+    &:hover{
+      border-color: $primaryDark !important;
+      background-color: $primaryDark !important;
+      color: $white !important;
+    }
   }
 }
 
@@ -679,16 +817,8 @@ aside{
   }
 
   .widget{
-    padding: 12px;
+    padding: 24px;
     margin-bottom: 24px;
-  }
-
-  button{
-    margin-top: 12px !important;
-  }
-
-  .text-4, .text-9{
-    border: 2px solid $darkGray;
     background-color: $lightGray;
 
     button{
@@ -697,6 +827,10 @@ aside{
       margin-right: auto !important;
       border-color: $darkGray;
     }
+  }
+
+  button{
+    margin-top: 12px !important;
   }
 }
 
@@ -872,7 +1006,7 @@ aside{
 /* FOOTER STYLES */
 
 .content-info{
-  background-color: darken($darkGray, 18%);
+  background-color: $primaryDark;
   color: $lightGray;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -896,20 +1030,30 @@ aside{
     }
   }
 
-  .transparent-btn{
+  .invert-btn{
     padding: 10px 20px;
-    color: $lightGray;
+    color: $white;
     font-size: 18px !important;
+    border-color: $primaryLight;
     text-transform: uppercase;
     float: right;
     position: relative;
     top: 20px;
 
     &:hover{
-      color: $dark;
+      color: $primaryDark;
       background-color: $white !important;
       border-color: $white;
     }
+  }
+}
+
+.termsContainer{
+  text-align: center;
+
+  p{
+    width: 100%;
+    font-size: 12px;
   }
 }
 
