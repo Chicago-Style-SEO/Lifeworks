@@ -61,6 +61,10 @@ function get_first_image() {
 }
 add_filter( 'get_first_image', 'thumbnail' );
 
-register_nav_menus([
-    'header_navigation' => __('Header Navigation', 'sage')
-]);
+
+function my_acf_init() {
+
+    acf_update_setting('google_api_key', 'AIzaSyB5rB06qFWoCFFRbP-rnG7aNx1_HHEXFuo');
+}
+
+add_action('acf/init', 'my_acf_init');

@@ -87,11 +87,15 @@ jQuery(".nav-mobile i").click(function(){
 });
 
 jQuery(".menu-search").click(function(){
-  jQuery(".searchBarContainer").toggle('slow');
+    jQuery(".menu-search i").toggleClass("fa-search");
+    jQuery(".menu-search i").toggleClass("fa-times");
+    jQuery(".searchBarContainer").toggleClass('activeSearch');
 });
 
 jQuery(".menu-item-type-gs_sim").click(function(){
-    jQuery(".searchBarContainer").toggle('slow');
+    jQuery(".menu-item-type-gs_sim i").toggleClass("fa-search");
+    jQuery(".menu-item-type-gs_sim i").toggleClass("fa-times");
+    jQuery(".searchBarContainer").toggleClass('activeSearch');
 });
 
 function runSearch(e) {
@@ -102,6 +106,5 @@ function runSearch(e) {
 }
 
 jQuery("#searchButton").click(function(){
-    alert("working");
     window.location.href = "/search/" + jQuery("#searchNav").val();
 });

@@ -26,6 +26,7 @@ $primaryDark: #2D3F54;
 $primaryLight: #7ECEFD;
 $primaryMid: #265EA4;
 $accent: #FF7F66;
+$accentDark: #D55137;
 $dark: #121212;
 $darkGray: #555458;
 $midGray: #D6D4D1;
@@ -45,10 +46,23 @@ $screen-sm-max: ($screen-md-min - 1);
 $screen-lg-min: 1200px;
 $screen-md-max: ($screen-lg-min - 1);
 
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+  max-width: inherit !important;
+}
+
 /* GLOBALS */
-body{
+body, html{
   font-family: $serifFont;
   font-size: 18px;
+  overflow-x: hidden !important;
 }
 
 h1{
@@ -100,6 +114,33 @@ a{
     cursor: pointer;
     color: $highlight;
   }
+}
+
+main blockquote{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 60px;
+
+  footer{
+    border-top: 4px solid $midGray;
+    padding-top: 10px;
+    color: $primaryMid;
+  }
+}
+
+blockquote:before, blockquote:after {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 120px;
+  line-height: 1;
+}
+blockquote:before {
+  top: 0;
+  left: 0;
+  content: "\201C";
+  color: $midGray;
 }
 
 button{
@@ -250,17 +291,17 @@ nav{
 }
 
 .headerHeadline{
-  font-size: 26px;
-  font-family: $sansSerifFont;
+  font-size: 20px;
+  font-family: $serifFont;
   color: $primaryMid;
   position: relative;
-  top: 48px;
+  top: 55px;
   right: 10px;
 }
 
 .headerNav{
   position: relative;
-  top: 60px;
+  top: 65px;
 
   ul{
 
@@ -302,7 +343,7 @@ button{
   position: relative;
   max-width: 1120px;
   margin: 0 auto;
-} 
+}
 
 .menu-item {
   flex: 1;
@@ -321,17 +362,19 @@ button{
   padding-left: 0;
   background-color: white;
   z-index: 100;
-  box-shadow: 0px 2px 8px $darkGray;
+  box-shadow: 0px 0px 5px $darkGray;
 
   li{
     border-bottom: 1px solid $midGray;
-    padding: 12px 24px;
+    padding: 6px 12px 6px 6px;
+    text-align: left !important;
+    min-width: 125px;
 
     &:hover{
-      background-color: $white;
+      background-color: $primaryDark !important;
 
       a{
-        color: $primaryDark;
+        color: $white !important;
       }
     }
 
@@ -421,16 +464,7 @@ button{
   height: 175px;
 
   @media (max-width: $screen-md-max) {
-    position: relative;
-    top: 60px;
-    height: 60px;
-    z-index: 10;
-    background-color: $white;
-    width: 100% !important;
-
-    img{
-      height: 60px;
-    }
+    display: none;
   }
 }
 
@@ -460,6 +494,9 @@ header{
 .navTopLeft{
   .navLogo{
     margin-top: 20px;
+    @media (max-width: $screen-md-max) {
+      display: none;
+    }
   }
 }
 
@@ -506,24 +543,33 @@ header{
 }
 
 .searchBarContainer{
-  width: 100%;
-  background-color: $primaryDark;
-  height: 40px;
+  width: 360px;
+  background-color: $lightGray;
+  height: 50px;
   z-index: 100;
   text-align: center;
-  display: none;
+  display: flex;
+  position: absolute;
+  right: -400px;
+  border-top: 2px solid $accent;
+  box-shadow: 0px 0px 5px $darkGray;
+  transition: all .5s ease;
 
   button{
-    height: 40px;
+    height: 48px;
     padding: 7px 20px;
-    background-color: $primaryMid;
+    background-color: $accent;
     color: $white;
 
     &:hover{
       cursor: pointer;
-      background-color: $white;
-      color: $primaryDark;
+      background-color: $accentDark;
+      color: $white;
     }
+  }
+
+  &.activeSearch{
+    right: 0px;
   }
 }
 
@@ -531,12 +577,12 @@ header{
   background-color: transparent;
   border: none;
   max-width: 1024px;
-  width: 100%;
+  width: 300px;
   font-size: 14px;
-  padding-left: 20px;
-  height: 40px;
+  padding-left: 10px;
+  height: 50px;
   outline: none;
-  color: $white;
+  color: $primaryDark;
 
   &:focus{
     border: 0;
@@ -557,13 +603,13 @@ main .fluid-container{
   .slider{
     width: 100%;
 
-    @media (max-width: $screen-md-max){
-      margin-top: 65px;
-    }
-
     .sliderImage{
       width: 100%;
       height: auto;
+
+      @media (max-width: $screen-sm-max){
+        height: 300px;
+      }
     }
 
     .sliderTextContainer{
@@ -576,39 +622,70 @@ main .fluid-container{
       color: $primaryDark;
       background-color: rgba($white, .6);
       padding-left: 120px;
-      padding-top: 300px;
+      padding-top: 200px;
+      padding-right: 120px;
 
       @media (max-width: $screen-md-max){
-        top: 0px;
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 60px;
       }
       @media (max-width: $screen-sm-max){
         top: 0px;
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 80px;
       }
       @media (max-width: $screen-xs-max) {
         top: 0px;
       }
 
-      h2{
-        margin-bottom: 36px;
-        font-style: italic;
-        font-size: 250%;
-        color: $primaryDark !important;
-
-        @media (max-width: $screen-sm-max){
-          font-size: 150%;
-        }
-      }
 
       h4{
         color: $primaryDark !important;
+        font-family: $sansSerifFont !important;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: none;
+
+        @media (max-width: $screen-md-max){
+          font-size: 115% !important;
+          line-height: 132% !important;
+        }
 
         @media (max-width: $screen-sm-max){
-          font-size: 100%;
+          font-size: 105% !important;
+          line-height: 118% !important;
         }
+
+        p{
+          color: $primaryDark !important;
+          font-family: $sansSerifFont !important;
+          font-size: 32px;
+          line-height: 40px;
+          text-transform: none;
+
+          @media (max-width: $screen-md-max){
+            font-size: 115% !important;
+            line-height: 132% !important;
+          }
+          @media (max-width: $screen-sm-max){
+            font-size: 105% !important;
+            line-height: 118% !important;
+          }
+        }
+
+
       }
 
       button{
         margin-top: 36px;
+
+        @media (max-width: $screen-sm-max){
+          margin-top: 0px;
+        }
       }
     }
   }
@@ -767,6 +844,7 @@ main .fluid-container{
     font-weight: 700;
     color: $white;
     z-index: 3;
+    position: relative;
   }
   p{
     max-width: 650px;
@@ -774,6 +852,7 @@ main .fluid-container{
     margin-bottom: 20px;
     color: $white;
     z-index: 3;
+    position: relative;
   }
   .calloutSingleImage{
     position: absolute;
