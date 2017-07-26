@@ -8,6 +8,7 @@
             wp_nav_menu(['theme_location' => 'mobile_navigation', 'menu_class' => 'nav']);
         endif;
         ?>
+        <img src="<?= get_template_directory_uri() . '/dist/images/lifeworks-psychotherapy-logo-white.png'; ?>" class="mobileLogo">
     </nav>
   <div class="container navTopContainer">
       <div class="navTop">
@@ -34,8 +35,7 @@
                       ?>
                   </div>
                   <div class="languageChange">
-                      <img src="<?= get_template_directory_uri() . '/dist/images/flag.png'; ?>" class="navLanguageIcon">
-                      <p>English</p>
+                      <?php echo do_shortcode('[gtranslate]'); ?>
                   </div>
               </div>
           </div>

@@ -40,7 +40,7 @@ get_template_part('templates/header');
         <img src="<?= get_template_directory_uri() . '/dist/images/lwp-symbol.png'; ?>" class="calloutSingleImage">
         <h2><?= get_field('callout_title'); ?></h2>
         <p><?= get_field('callout_body_text'); ?></p>
-        <a href="<?= get_field('callout_body_button_URL'); ?>"><button class="transparent-btn"><?= get_field('callout_body_button_text') ?></button></a>
+        <a href="<?= get_field('callout_body_button_URL'); ?>"><button class="alternate-btn"><?= get_field('callout_body_button_text') ?></button></a>
     </div>
 <?php endif; ?>
 <!-- END SINGLE BUTTON CALLOUT -->
