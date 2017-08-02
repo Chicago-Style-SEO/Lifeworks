@@ -179,64 +179,206 @@ button{
   margin-bottom: 0px;
 }
 
-nav{
-
-  a{
-    font-family: $sansSerifFont;
-    color: $darkGray;
-    font-size: 14px;
-    text-transform: uppercase;
-
-    &:hover{
-      color: $primaryMid;
-      text-decoration: none;
-    }
-  }
+.nav-primary {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+  font-family: $sansSerifFont;
 }
-
-.nav-primary{
-  background-color: $primaryMid;
+.nav-primary ul,
+.nav-primary li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-primary ul {
   position: relative;
+  z-index: 597;
+}
+.nav-primary ul li {
+  float: left;
+  min-height: 1px;
+  vertical-align: middle;
+}
+//.nav-primary ul li.hover,
+.nav-primary ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+.nav-primary ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+.nav-primary ul ul li {
+  float: none;
+}
+.nav-primary ul ul ul {
+  top: 0;
+  left: 250px;
+  width: 250px;
+}
+.nav-primary ul li:hover > ul {
+  visibility: visible;
+}
+.nav-primary ul ul {
+  bottom: 0;
+  left: 0;
+}
+.nav-primary ul ul {
+  margin-top: 0;
+}
+.nav-primary ul ul li {
+  font-weight: normal;
+}
+.nav-primary a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: $sansSerifFont;
+  /* THIS LOOKS WEIRD ON LOCAL BUT IS A FIX FOR THE LIVE SITE */
+  min-height: 50px;
+  padding-top: 18px;
+  /* END WEIRDNESS */
+}
+/* Custom CSS Styles */
+.nav-primary {
+  background: $primaryDark;
+  //border-bottom: 4px solid $primaryDark;
+  font-size: 16px;
+  height: 50px;
 
   @media (max-width: $screen-md-max) {
     display: none;
   }
 
+}
+.nav-primary > ul {
+  *display: inline-block;
+}
+.nav-primary:after,
+.nav-primary ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.nav-primary ul {
+  text-transform: uppercase;
+}
+.nav-primary ul ul {
+  border-top: 4px solid $primaryLight;
+  text-transform: none;
+  width: 250px;
+  top: 50px;
+}
+.nav-primary ul ul a {
+  background: lighten($primaryLight, 24%) !important;
+  color: $primaryDark !important;
+  border: 1px solid lighten($primaryLight, 10%) !important;
+  border-top: 0 none !important;
+  border-left: 0 none !important;
+  border-right: 0 none !important;
+  line-height: 150%;
+  padding: 14px;
+  font-size: 14px;
+  text-align: left !important;
+}
+.nav-primary ul ul ul {
+  border-top: 0 none;
+}
+.nav-primary ul ul li {
+  position: relative;
+}
+.nav-primary ul ul li:first-child > a {
+  border-top: 1px solid $primaryLight;
+}
+.nav-primary ul ul li:hover > a {
+  background: $primaryMid !important;
+  color: $offWhite !important;
+
+}
+.nav-primary ul ul ul li a {
+  padding-bottom: 14px !important;
+}
+
+.nav-primary .fa-search, .nav-primary .fa-times{
+  position: relative;
+  top: 12px;
+}
+
+.nav-primary ul ul ul li:hover > a {
+  background: $accent !important;
+  color: $white !important;
+  padding-bottom: 14px;
+}
+
+.nav-primary .sub-menu{
   li{
-    padding: 20px 0px;
-    transition: all .3s ease;
-
-    &:hover{
-      background-color: $primaryDark;
-
-      .sub-menu{
-        display: block;
-      }
-
-      a{
-        color: $white;
-      }
-      i{
-        color: $white;
-      }
-    }
-
-    a{
-      color: $white;
-    }
-  }
-
-  i{
-    color: $white !important;
-  }
-
-  .active{
-    background-color: $primaryDark;
-    a{
-      color: $white;
-    }
+    background-color: lighten($primaryLight, 10%);
   }
 }
+
+.nav-primary ul ul li:last-child > a {
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 1px 0 $primaryLight;
+  -webkit-box-shadow: 0 1px 0 $primaryLight;
+  box-shadow: 0 1px 0 $primaryLight;
+}
+.nav-primary ul ul li:last-child:hover > a {
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.nav-primary ul ul li.has-sub > a:after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+.nav-primary ul li:hover > a,
+.nav-primary ul li.active > a, .nav-primary .current-menu-parent > a, .nav-primary .current-menu-item > a {
+  background: transparent;
+  color: $primaryLight;
+  border-bottom: 4px solid $primaryLight;
+}
+.nav-primary ul li.has-sub > a:after {
+  content: '+';
+  margin-left: 5px;
+}
+.nav-primary ul li.last ul {
+  left: auto;
+  right: 0;
+}
+.nav-primary ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+.nav-primary a {
+  background: transparent;
+  color: $white;
+  //padding: 0 20px;
+}
+.nav-primary > ul > li > a {
+  font-size: 16px;
+}
+
+.menu-item{
+
+  .fa{
+    color: $white;
+  }
+}
+
+
 
 .nav-mobile{
   display: none;
@@ -324,7 +466,7 @@ nav{
 .headerHeadline{
   font-size: 20px;
   font-family: $serifFont;
-  color: $primaryMid;
+  color: $primaryDark;
   position: relative;
   top: 55px;
   right: 10px;
@@ -333,21 +475,58 @@ nav{
 .headerNav{
   position: relative;
   top: 65px;
+  left: 68px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 
   ul{
 
     li{
-      text-align: right;
+      text-align: center;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      padding: 0px 10px;
 
       a{
         font-family: $sansSerifFont;
-        color: $darkGray;
+        color: $primaryMid;
+        border-bottom: 2px solid transparent;
         text-transform: uppercase;
+        font-weight: bold;
 
         &:hover{
-          color: $primaryMid;
+          color: $primaryDark;
+          border-bottom: 2px solid $accent;
+          text-decoration: none;
         }
       }
+
+      //&:last-child{
+      //  padding-left: 0px;
+      //}
     }
   }
 }
@@ -371,49 +550,39 @@ button{
 
 #menu-menu-1, #menu-primary-menu {
   display: flex !important;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
   max-width: 1120px;
   margin: 0 auto;
 }
 
 .menu-item {
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  justify-content: center;
-  align-self: center;
-}
-
-.sub-menu{
-  display: none;
-  list-style-type: none;
-  position: absolute;
-  top: 68px;
-  padding-left: 0;
-  background-color: white;
-  z-index: 100;
-  box-shadow: 0px 0px 5px $darkGray;
-
-  li{
-    border-bottom: 1px solid $midGray;
-    padding: 6px 12px 6px 6px;
-    text-align: left !important;
-    min-width: 125px;
-
-    &:hover{
-      background-color: $primaryDark !important;
-
-      a{
-        color: $white !important;
-      }
-    }
-
-    a{
-      color: $darkGray !important;
-    }
-  }
-
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
 
 .home .main{
@@ -510,7 +679,7 @@ button{
 }
 
 .navTopContainer{
-  height: 175px;
+  height: 160px;
 
   @media (max-width: $screen-md-max) {
     display: none;
@@ -961,6 +1130,16 @@ aside{
     background-color: rgba($altColor, .3);
     border-top: 4px solid $altColor !important;
 
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: 12px;
+
+      li{
+        margin-bottom: 12px;
+      }
+    }
+
     a{
       border-bottom: 2px solid transparent;
 
@@ -1029,9 +1208,21 @@ aside{
       display: inline-block;
     }
 
+    .entry-summary{
+      img{
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 12px;
+
+        @media (max-width: $screen-sm-max) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+
     .attachment-thumbnail{
       width: 100% !important;
-      height: auto;
+      height: auto !important;
 
       @media (max-width: $screen-sm-max) {
         margin-bottom: 24px;
@@ -1055,6 +1246,42 @@ aside{
     @media (max-width: $screen-md-max) {
       padding-left: 36px;
     }
+
+    .entry-content{
+      img{
+        width: 100%;
+        height: auto;
+      }
+
+      em{
+        strong{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#comments {
+  .comment-body{
+    padding: 10px;
+    margin-bottom: 24px;
+    background-color: $offWhite;
+    position: relative;
+  }
+
+  .comment-metadata{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .comment-author{
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 24px;
   }
 }
 
@@ -1108,25 +1335,48 @@ aside{
 
 .commentCountBlogItem{
   position: absolute;
-  top: -48px;
-  right: 0;
+  bottom: 24px;
+  right: 24px;
 
-  @media (max-width: $screen-md-max) {
-    position: absolute;
-    top: 85%;
-    right: 20px;
-  }
+  //@media (max-width: $screen-md-max) {
+  //  position: absolute;
+  //  top: 85%;
+  //  right: 20px;
+  //}
 }
 
 .blog article{
   padding: 15px 36px 36px 36px;
+
+  .entry-title{
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+}
+
+.single{
+  article{
+    header{
+      .entry-title{
+        font-size: 30px;
+        margin-bottom: 12px;
+      }
+
+      .author{
+        display: inline-block;
+      }
+
+      time{
+        display: inline-block;
+        margin-bottom: 12px;
+      }
+    }
+  }
 }
 
 .blogReadMore{
-  @media (max-width: $screen-sm-max) {
-    position: relative;
-    top: 12px;
-  }
+  position: relative;
+  top: 12px;
 }
 
 /* END BLOG PAGE STYLES */
@@ -1243,5 +1493,32 @@ aside{
   button{
     margin-bottom: 24px;
     margin-top: 12px;
+  }
+}
+
+/* END CONTACT STYLES */
+
+
+figcaption{
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.page-template-default main figure{
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+
+main{
+
+  h1.page-title{
+    text-transform: uppercase !important;
+  }
+  h1, h2, h3, h4, h5, h6{
+    text-transform: capitalize;
+  }
+
+  h2.entry-title a{
+    text-transform: uppercase;
   }
 }

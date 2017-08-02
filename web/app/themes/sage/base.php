@@ -182,12 +182,17 @@ get_template_part('templates/header');
     <div class="container" role="document" style="margin-top: 36px; margin-bottom: 36px;">
         <div class="content row">
             <main class="main col-md-9">
+                <?php if(!is_home() && !is_single() && !is_search()) : ?>
+                    <h1 class="pageTitle"><?php the_title(); ?></h1>
+                <?php endif; ?>
                 <?php include Wrapper\template_path(); ?>
             </main><!-- /.main -->
             <?php if (Setup\display_sidebar()) : ?>
                 <aside class="sidebar col-md-3">
                     <?php if( is_home() || is_single() ): ?>
                         <?php if ( dynamic_sidebar('sidebar-blog') ) : else : endif; ?>
+                    <?php elseif( is_page('contact') ): ?>
+                        <?php if ( dynamic_sidebar('sidebar-contact') ) : else : endif; ?>
                     <?php elseif( !is_home() ): ?>
                         <?php include Wrapper\sidebar_path(); ?>
                     <?php endif; ?>

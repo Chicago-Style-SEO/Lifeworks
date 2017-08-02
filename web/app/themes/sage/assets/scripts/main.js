@@ -108,3 +108,19 @@ function runSearch(e) {
 jQuery("#searchButton").click(function(){
     window.location.href = "/search/" + jQuery("#searchNav").val();
 });
+
+jQuery( ".nav-primary li").hover(
+    function() {
+        jQuery(".sub-menu", this).css("display", "block");
+    }, function() {
+        jQuery(".sub-menu", this).css("display", "none");
+    }
+);
+
+// jQuery(".nav-primary .menu-item").mouseenter(function(){
+//     jQuery(".nav-primary .sub-menu").css("display", "block");
+// });
+//
+// jQuery(".nav-primary .menu-item").mouseout(function(){
+//     jQuery(".nav-primary .sub-menu").css("display", "none");
+// });

@@ -22,7 +22,9 @@ get_template_part('templates/header');
     <div class="container content">
         <div class="row">
             <main class="col-md-12">
-                <h2 class="pageTitle"><?php the_title(); ?></h2>
+                <?php if(!is_home() && !is_single()) : ?>
+                    <h1 class="pageTitle"><?php the_title(); ?></h1>
+                <?php endif; ?>
                 <?php include Wrapper\template_path(); ?>
                 <!-- IMPORT TEAM SECTION -->
                 <?php if( have_rows('team_member') ): ?>

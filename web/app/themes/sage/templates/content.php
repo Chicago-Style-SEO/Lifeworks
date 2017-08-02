@@ -5,14 +5,14 @@
   </header>
   <div class="entry-summary">
       <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-12">
               <?php if( has_post_thumbnail() ) : ?>
-                  <?php the_post_thumbnail( 'thumbnail' ) ?>
+                  <?php the_post_thumbnail( 'medium' ) ?>
               <? else :?>
-                  <img src="<?php echo get_first_image('thumbnail'); ?>" class="attachment-thumbnail size-thumbnail wp-post-image">
+                  <img src="<?php echo get_first_image('medium'); ?>" class="attachment-thumbnail size-thumbnail wp-post-image">
               <?php endif; ?>
               </div>
-          <div class="col-md-8">
+          <div class="col-md-12">
               <?php the_excerpt(); ?>
               <div class="commentCountBlogItem">
                   <i class="fa fa-comment-o" aria-hidden="true"></i>

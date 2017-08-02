@@ -13,12 +13,12 @@
   <div class="container navTopContainer">
       <div class="navTop">
           <div class="row">
-              <div class="col-md-6 navTopLeft">
+              <div class="col-md-7 navTopLeft">
                   <a href="/">
                       <img src="<?= get_template_directory_uri() . '/dist/images/lifeworks-psychotherapy-logo.png'; ?>" class="navLogo">
                   </a>
               </div>
-              <div class="col-md-6 navTopRight">
+              <div class="col-md-5 navTopRight">
                   <span class="headerHeadline">Simply aware, fully alive.</span>
 <!--                <div class="navContact">-->
 <!--                    <a href="mailto:info@lifeworkspsychotherapy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Get in Touch</a>-->
