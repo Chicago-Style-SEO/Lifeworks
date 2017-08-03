@@ -124,3 +124,47 @@ jQuery( ".nav-primary li").hover(
 // jQuery(".nav-primary .menu-item").mouseout(function(){
 //     jQuery(".nav-primary .sub-menu").css("display", "none");
 // });
+
+jQuery(".locationCheckbox").click(function(){
+   var currentLocationSelected = $(this).val();
+   // console.log(currentLocationSelected);
+   if (currentLocationSelected === "all-locations"){
+       jQuery(".teamMember[data-locations]").show('slow');
+   }
+   else if (currentLocationSelected === "skokie-location"){
+       // jQuery('.teamMember').hide('slow');
+       jQuery(".teamMember[data-locations*='location-Loop']").hide('fast');
+       jQuery(".teamMember[data-locations*='location-Lakeview']").hide('fast');
+       jQuery(".teamMember[data-locations*='location-Skokie']").show('fast');
+   }
+   else if (currentLocationSelected === "lakeview-location"){
+       jQuery(".teamMember[data-locations*='location-Skokie']").hide('fast');
+       jQuery(".teamMember[data-locations*='location-Loop']").hide('fast');
+       jQuery(".teamMember[data-locations*='location-Lakeview']").show('fast');
+   }
+   else if (currentLocationSelected === "loop-location"){
+       jQuery(".teamMember[data-locations*='location-Skokie']").hide('fast');
+       jQuery(".teamMember[data-locations*='location-Lakeview']").hide('fast');
+       jQuery(".teamMember[data-locations*='location-Loop']").show('fast');
+   }
+   else{
+       jQuery(".teamMember[data-locations]").show('slow');
+   }
+});
+
+
+jQuery('#sortTeamAZ').click(function () {
+    jQuery('#sortTeamZA').show();
+    jQuery('#sortTeamAZ').hide();
+    jQuery( ".teamMember" ).sort(function( a, b ) {
+        return jQuery( a ).text() > jQuery( b ).text();
+    }).appendTo( ".teamRow" );
+});
+
+jQuery('#sortTeamZA').click(function () {
+    jQuery('#sortTeamAZ').show();
+    jQuery('#sortTeamZA').hide();
+    jQuery( ".teamMember" ).sort(function( b, a ) {
+        return jQuery( b ).text() > jQuery( a ).text();
+    }).appendTo( ".teamRow" );
+});

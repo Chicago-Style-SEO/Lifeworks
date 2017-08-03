@@ -28,14 +28,39 @@ get_template_part('templates/header');
                 <?php include Wrapper\template_path(); ?>
                 <!-- IMPORT TEAM SECTION -->
                 <?php if( have_rows('team_member') ): ?>
-                    <div class="row">
 
+
+                    <div id="teamFilters">
+                        <h5>Filter by Location</h5>
+                        <fieldset>
+                            <input type="radio" name="location" class="locationCheckbox" id="allFilter" value="all-locations" checked="checked">
+                            <label for="allFilter">All Locations</label>
+
+                            <input type="radio" name="location" class="locationCheckbox" id="skokieFilter" value="skokie-location">
+                            <label for="skokieFilter">Skokie</label>
+
+                            <input type="radio" name="location" class="locationCheckbox" id="lakeviewFilter" value="lakeview-location">
+                            <label for="lakeviewFilter">Lakeview</label>
+
+                            <input type="radio" name="location" class="locationCheckbox" id="loopFilter" value="loop-location">
+                            <label for="loopFilter">Loop</label>
+                        </fieldset>
+                        <div id="sortTeamAZ">
+                            <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+                        </div>
+                        <div id="sortTeamZA">
+                            <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="row teamRow">
                         <?php while( have_rows('team_member') ): the_row();
                         $teamMemberName = get_sub_field('team_member_name');
                         $teamMemberImage = get_sub_field('team_member_image');
                         $teamMemberPage = get_sub_field('team_member_page');
+                        $locations = get_sub_field('team_member_locations');
                         ?>
-                        <div class="col-md-3 teamMember">
+
+                        <div class="col-md-3 teamMember" data-locations='<?php foreach( $locations as $location): ?>location-<?php echo $location; ?> <?php endforeach; ?>'>
                             <a href="<?= $teamMemberPage ?>">
                                 <img src="<?= $teamMemberImage ?>" class="teamMemberImage">
                                 <h6><?= $teamMemberName ?></h6>

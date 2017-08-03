@@ -1,4 +1,5 @@
 <header class="banner">
+    <div id="wptime-plugin-preloader"></div>
     <nav class="nav-mobile">
         <i class="fa fa-bars" aria-hidden="true"></i>
         <i class="fa fa-times-circle-o active" aria-hidden="true"></i>

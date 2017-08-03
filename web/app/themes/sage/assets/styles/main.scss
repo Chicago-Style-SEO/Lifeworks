@@ -138,6 +138,72 @@ main p a{
   border-bottom: 0px !important;
 }
 
+#teamFilters{
+  position: relative;
+}
+
+.locationCheckbox{
+  width: 180px;
+  height: 36px;
+  background-color: $primaryDark;
+  position: relative;
+  display: none;
+
+  + label{
+    background-color: darken($lightGray, 20%);
+    color: $darkGray;
+    transition: all .3s ease;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 180px;
+    height: 48px;
+    text-align: center;
+    padding: 10px;
+    font-family: $sansSerifFont;
+    margin-bottom: 24px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &:checked{
+    background-color: $primaryLight;
+
+    +label{
+      background-color: $primaryDark;
+      color: $primaryLight;
+    }
+  }
+
+
+}
+
+.teamRow{
+  position: relative;
+  min-height: 600px;
+}
+#sortTeamAZ, #sortTeamZA{
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+
+  i{
+    color: $primaryMid;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+#sortTeamZA{
+  display: none;
+}
 
 main blockquote{
   width: 100%;
@@ -1173,7 +1239,7 @@ aside{
 /* FULLWIDTH TEMPLATE STYLES */
 
 .fullwidthPageWrapper{
-  padding: 60px 0px;
+  padding: 0px 0px;
 }
 
 /* TEAM MEMBER STYLING */
@@ -1521,4 +1587,8 @@ main{
   h2.entry-title a{
     text-transform: uppercase;
   }
+}
+
+.ai1ec-date .ai1ec-date-title{
+  background-color: $white;
 }
